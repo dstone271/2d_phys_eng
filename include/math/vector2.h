@@ -7,6 +7,9 @@ class Vector2 {
   Vector2();
   Vector2(float x, float y);
 
+  float GetX() { return x_; }
+  float GetY() { return y_; }
+
  private:
   float x_;
   float y_;

@@ -13,9 +13,15 @@ int main(int argc, char** argv) {
 
   // System & graphics code
   sf::RenderWindow window;
+  sf::Event event;
   window.create(sf::VideoMode(800, 800), "Game App");
   sf::CircleShape particle_graphic(10);
   while (window.isOpen()) {
+    while (window.pollEvent(event)) {
+      if (event.type == sf::Event::Closed) {
+        window.close();
+      }
+    }
     window.clear();
     Vector2 particle_pos = particle_0.position_;
     particle_graphic.setPosition(sf::Vector2f(particle_pos.GetX(), particle_pos.GetY()));
