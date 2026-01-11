@@ -10,7 +10,7 @@
 int main(int argc, char** argv) {
   // Create particle
   Particle particle_0;
-  particle_0.position_ = Vector2(100, 200);
+  particle_0.position_ = Vector2(100, 250);
 
   // System & graphics code
   sf::RenderWindow window;
