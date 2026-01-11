@@ -1,6 +1,7 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 #include "particle.h"
 #include "math/vector2.h"
@@ -9,7 +10,7 @@
 int main(int argc, char** argv) {
   // Create particle
   Particle particle_0;
-  particle_0.position_ = Vector2(100, 100);
+  particle_0.position_ = Vector2(100, 200);
 
   // System & graphics code
   sf::RenderWindow window;
@@ -29,5 +30,6 @@ int main(int argc, char** argv) {
     window.display();
   }
 
+  std::cout << "Closing program..." << std::endl;
   return 0;
 }
