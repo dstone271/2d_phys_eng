@@ -4,6 +4,7 @@
 #include "math/vector2.h"
 
 
+// Particle Struct
 struct Particle {
   Vector2 position_;
   Vector2 velocity_;
